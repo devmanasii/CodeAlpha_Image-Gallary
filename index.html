@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Animated Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- THEME TOGGLE -->
+<button id="themeToggle" class="theme-btn">🌙</button>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <h2>✨ Image Gallery</h2>
+
+  <!-- Search Bar -->
+  <input type="text" id="searchBox" placeholder="Search images...">
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="city">City</button>
+    <button class="filter-btn" data-category="animals">Animals</button>
+  </div>
+
+  <!-- Upload Image -->
+  <label class="upload-btn">
+    Upload Image
+    <input type="file" id="uploadInput" accept="image/*">
+  </label>
+</nav>
+
+<!-- Gallery -->
+<div class="gallery" id="gallery">
+  <div class="image nature" data-title="Green Mountain">
+    <img src="https://picsum.photos/id/1018/600/400">
+  </div>
+  <div class="image city" data-title="City Buildings">
+    <img src="https://picsum.photos/id/1015/600/400">
+  </div>
+  <div class="image animals" data-title="Cute Dog">
+    <img src="https://picsum.photos/id/1024/600/400">
+  </div>
+  <div class="image nature" data-title="Waterfall">
+    <img src="https://picsum.photos/id/1019/600/400">
+  </div>
+  <div class="image city" data-title="Modern Towers">
+    <img src="https://picsum.photos/id/1031/600/400">
+  </div>
+  <div class="image animals" data-title="Elephant">
+    <img src="https://picsum.photos/id/1025/600/400">
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img">
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
